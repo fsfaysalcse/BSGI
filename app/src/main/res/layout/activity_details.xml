@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".details">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="0dp">
+        <RelativeLayout
+            android:id="@+id/rellay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/contact_form_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+                android:text="View Member Details"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:typeface="serif" />
+
+            <RelativeLayout
+                android:layout_below="@+id/contact_form_title"
+                android:id="@+id/imgUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="193dp"
+                    android:layout_height="247dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginBottom="9dp"
+                    android:adjustViewBounds="true"
+                    android:background="@color/white"
+                    android:padding="3dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/atik" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgUser"
+
+                android:layout_marginTop="15dp"
+                android:text="Name: "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name1"
+                android:layout_marginTop="15dp"
+
+                android:text="Email: "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/name3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name2"
+                android:layout_marginTop="15dp"
+                android:text="Phone number: "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/name4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name3"
+                android:layout_marginTop="15dp"
+
+                android:text="Father Name: "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/name13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name4"
+                android:layout_marginTop="15dp"
+
+                android:text="Mother Name: "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/name5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name13"
+                android:layout_marginTop="15dp"
+
+                android:text="Date of birth: "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/name6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name5"
+                android:layout_marginTop="15dp"
+
+                android:text="Designation: "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/name7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name6"
+                android:layout_marginTop="15dp"
+
+                android:text="Member Type: "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/name8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name7"
+                android:layout_marginTop="15dp"
+
+                android:text="Present Address: "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/name9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name8"
+                android:layout_marginTop="15dp"
+
+                android:text="Education level: "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/name10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name9"
+                android:layout_marginTop="15dp"
+
+                android:text="degree: "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/name11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name10"
+                android:layout_marginTop="15dp"
+
+                android:text="Education Year: "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/name12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name11"
+                android:layout_marginTop="15dp"
+
+                android:text="Institution: "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

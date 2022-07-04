@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".dashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="280dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/logo1"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Member Directory"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"></TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="210dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/total"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/balance2"></ImageView>
+
+                            <TextView
+                                android:id="@+id/txttotalRdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/total"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:text="Pending Member "
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/balance"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/balance2"></ImageView>
+
+                            <TextView
+                                android:id="@+id/txtbalance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/balance"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:text="Approve Member"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/tleave"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/balance2"></ImageView>
+
+                            <TextView
+                                android:id="@+id/txttleave"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tleave"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:text="Reject Member"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/AvDay"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/balance2"></ImageView>
+
+                            <TextView
+                                android:id="@+id/txtAvDay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/AvDay"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:text="Blog"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/rfl"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="Member Search"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></Button>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
