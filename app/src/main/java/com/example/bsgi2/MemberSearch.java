@@ -10,7 +10,9 @@ import android.os.Bundle;
 
         import androidx.appcompat.app.AppCompatActivity;
 
-        import retrofit2.Call;
+import com.google.android.material.textfield.TextInputEditText;
+
+import retrofit2.Call;
         import retrofit2.Callback;
         import retrofit2.Response;
         import retrofit2.Retrofit;
@@ -20,7 +22,7 @@ public class MemberSearch extends AppCompatActivity {
 
     // creating variables for our edittext,
     // button, textview and progressbar.
-    private EditText name, member_id;
+    private TextInputEditText name, member_id;
     private Button postDataBtn;
     private TextView responseTV;
     private ProgressBar loadingPB;
@@ -31,8 +33,8 @@ public class MemberSearch extends AppCompatActivity {
         setContentView(R.layout.activity_member_search);
 
         // initializing our views
-        name = findViewById(R.id.nm1);
-        member_id = findViewById(R.id.nm2);
+        name = (TextInputEditText) findViewById(R.id.et_name);
+        member_id =(TextInputEditText) findViewById(R.id.et_member_id);
         postDataBtn = findViewById(R.id.submit1);
         responseTV = findViewById(R.id.idTVResponse);
         loadingPB = findViewById(R.id.idLoadingPB);
